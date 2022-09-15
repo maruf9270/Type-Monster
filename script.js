@@ -19,12 +19,15 @@ fetch("./texts.json")
     question.innerHTML = questionText;
   });
 
+
+
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
   const newLetter = e.key;
 
   // Handle backspace press
   if (newLetter == "Backspace") {
+    
     userText = userText.slice(0, userText.length - 1);
     return display.removeChild(display.lastChild);
   }
@@ -48,6 +51,9 @@ const typeController = (e) => {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
     errorCount = errorCount+1;
   }
+
+  // For keepine the last line visible at display
+  display.scrollTop = display.scrollHeight;
 
   // check if given question text is equal to user typed text
   if (questionText === userText) {
