@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Type blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootststp cdn  -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <nav>
+        <section>
+            <div>
+                aaaaaaaa
+            </div>
+        </section>
+    </nav>
+    
+    <main>
+        <section>
+            <div class="container my-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         Difference between local storage and seassion storage
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Difference between local storage and seassion storage:</strong><br>
+                          <h5>Local storage:</h5>Local storage is a storage in browser which can save some data of a website for a long priod of time. When user closes the browser the data does not wipe out by the browser. Local storage has 4 methods. They are:  <code>localStorage.setItem(key, value)</code>, <code>localStorage.getItem(key)</code>, <code>localStorage.removeItem(key)</code>, <code>localStorage.clear()</code> <br>
+                          <h5> Session Storage:</h5> On the other hand sessoin storage data is instantly wiped out by the browser as soon as the page session ends. Session storage has four methods. They are: <code>sessionStorage.setItem(key, value)</code>, <code>sessionStorage.getItem(key)</code>, <code>sessionStorage.removeItem(key)</code>, <code>sessionStorage.clear()</code>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         Difference between global scope and block scope
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong> Difference between global scope and block scope: </strong><br>
+                          <strong>Global scope: </strong>The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable. <br>
+                          <strong>Block scope:</strong> Block scope is also a sub-type of local scope. The block scope can be defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only allowed to refer to these variables from within the curly brackets {}. <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Event Loop
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Event loop and how does it work</strong> <br>
+                            The Event Loop has one simple job — to monitor the Call Stack 
+                            and the Callback Queue. If the Call Stack is empty, it will 
+                            take the first event from the queue and will push it to the 
+                            Call Stack, which effectively runs it. Such an iteration is 
+                            called a tick in the Event Loop. Each event is just a function 
+                            callback.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How many way can we get undefined vlaue
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>How many way can we get undefined value: </strong><br>
+                            <ul>
+                                <li>A variable that has not been assigned a value is of type undefined</li>
+                                <li>
+                                    A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value.
+                                </li>
+                                <li>
+                                    A function returns undefined if a value was not returned .
+                                </li>
+                            </ul> 
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootststp javascript -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
+</html>
